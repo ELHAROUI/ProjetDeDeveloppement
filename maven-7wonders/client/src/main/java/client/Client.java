@@ -83,6 +83,7 @@ public class Client {
     }
     
     public static final void main(String []args) {
+    	
         try {
             System.setOut(new PrintStream(System.out, true, "UTF-8"));
         } catch (UnsupportedEncodingException e) {
