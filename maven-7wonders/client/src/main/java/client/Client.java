@@ -96,6 +96,8 @@ public class Client {
 
 
         System.out.println("fin du main pour le client");
+        
+        //testCommit
 
     }
     
