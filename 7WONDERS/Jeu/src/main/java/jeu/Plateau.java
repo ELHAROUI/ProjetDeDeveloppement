@@ -6,7 +6,8 @@ public class Plateau {
 
     int nbPieces;
     int nbPoints;
-    Ressource laRessource;
+    Ressource laRessourcePrincipale;
+   
 
     public Plateau (int nbDePieces , int nbDePoints, Ressource uneRessource) {
 
@@ -33,7 +34,7 @@ public class Plateau {
 
     public Ressource getLaRessource() {
 
-        return laRessource;
+        return laRessourcePrincipale;
 
     }
 
@@ -54,6 +55,5 @@ public class Plateau {
         System.Out.println('Plateau :'+this+" nombre de points : " + nbDePoints);
 
     }
-
 
 }
