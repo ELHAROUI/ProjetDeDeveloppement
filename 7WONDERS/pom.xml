@@ -27,11 +27,7 @@
   </dependencies>
   
   <modules>
-  	<module>Client</module>
-  	<module>Commun</module>
   	<module>Jeu</module>
-  	<module>Lanceur</module>
-  	<module>Serveur</module>
   	<module>Test</module>
   </modules>
   

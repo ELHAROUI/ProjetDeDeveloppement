@@ -2,7 +2,7 @@ package jeu;
 
 public class Carte {
 	
-	int cout;
+	int valeur;
 	typeCarte type;
 	
 	
@@ -11,17 +11,17 @@ public class Carte {
 		this.cout = unCout;
 		this.type=unType;
 		
+	}
+	
+	public int getValeur() {
+		
+		return cout;
 		
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	public typeCarte getType() {
+		
+		return type;
+	}
+
 }
