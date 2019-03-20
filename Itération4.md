@@ -7,5 +7,7 @@ Représentation  de la mise en jeu d'une carte : Selon le type de la carte , il 
 Chaque plateau correspond à un joueur.
 
 
+Fonctionnalités implémentées :
 
+   Implémentation de la mise en jeu d'une carte: Attribution de points de victoire ou de ressources à un plateau lorsque l'action est de jouer une carte. 
    
