@@ -23,6 +23,5 @@
   * Pendant la partie, le négoce des ressources nécessaires au développement est possible entre voisins immédiats. Quand les trois paquets de cartes ont été joués, les joueurs totalisent leurs points dans différents domaines (civil, scientifique, commercial, militaire, état d'avancement). Le joueur ayant le plus de points gagne la partie.
 
 ## Comment lancer le jeu ?
-  Depuis la classe Jeu.java du module Jeu.
-
-*
+  
+  * Depuis la classe Jeu.java du module Jeu.
