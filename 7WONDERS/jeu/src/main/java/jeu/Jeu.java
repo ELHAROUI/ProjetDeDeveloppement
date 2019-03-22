@@ -10,10 +10,13 @@ class jeu {
 
         Plateau p1= new Plateau (3,0,res1);
         Carte c = new Carte (0,TypeCarte.batiments_civils);
+        
+        p1.toString();
+        
         p1.jouerCarte(c);
 
         p1.toString();
-
+ 
         
     }
 
