@@ -1,25 +1,23 @@
 package jeu;
 
+import jeu.NomRessource;
 
 public class Ressource {
 	
-	int id;
-	nomRessource nom;
+	NomRessource nom;
 	int cout;
 	int quantite;
 	
-	public Ressource (int unId, nomRessource unNom, int unCout) {
+	public Ressource  (NomRessource unNom, int unCout) {
 		
-		this.id=unId;
 		this.nom=unNom;
 		this.cout=unCout;
 		
 	}
 	
-	public Ressource (int unId, nomRessource unNom, int unCout, int uneQuantite) {
+	public Ressource (NomRessource unNom, int unCout, int uneQuantite) {
 		
 		
-		this.id=unId;
 		this.nom=unNom;
 		this.cout=unCout;
 		this.quantite=uneQuantite;
@@ -27,18 +25,18 @@ public class Ressource {
 		
 	}
 	
-	  public int getleCout() {
+	  public int getCout() {
 
 	        return cout;
 
 	    }
 
-	    public int getlaquantite() {
+	    public int getQuantite() {
 
 	        return quantite;
 	    }
 
-	    public nomRessource getType() {
+	    public NomRessource getNom() {
 
 	        return nom;
 

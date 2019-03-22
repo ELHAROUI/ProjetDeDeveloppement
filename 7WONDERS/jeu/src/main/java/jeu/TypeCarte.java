@@ -1,4 +1,6 @@
-public enum typeCarte {
+package jeu;
+
+public enum TypeCarte {
 	
 	matieres_premieres,
 	produits_manufactures,

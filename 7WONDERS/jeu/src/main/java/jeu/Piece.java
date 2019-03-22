@@ -1,3 +1,6 @@
+package jeu;
+
+
 public class Piece {
 	
 	int valeur;

@@ -1,12 +1,15 @@
 package jeu;
 
 
+import jeu.Ressource;
+
 
 public class Plateau {
 
     int nbPieces;
     int nbPoints;
     Ressource laRessourcePrincipale;
+    List<Carte> lesCartes = new ArrayList<Carte>();
    
 
     public Plateau (int nbDePieces , int nbDePoints, Ressource uneRessource) {
