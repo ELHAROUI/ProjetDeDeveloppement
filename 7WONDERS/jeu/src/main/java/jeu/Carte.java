@@ -3,6 +3,9 @@ package jeu;
 public class Carte {
 	
 	int valeur;
+	/**
+	 * pour la presentation de la valeur de la carte
+	 */
 	typeCarte type;
 	
 	
