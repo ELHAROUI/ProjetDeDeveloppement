@@ -24,3 +24,4 @@
 
 ## Comment lancer le jeu ?
   
+  * Lnacez la classe Lanceur dans le package Lanceur
