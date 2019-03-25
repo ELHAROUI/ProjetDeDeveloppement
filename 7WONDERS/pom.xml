@@ -25,11 +25,4 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  
-  <modules>
-  	<module>Jeu</module>
-  	<module>Test</module>
-  </modules>
-  
-  
 </project>
