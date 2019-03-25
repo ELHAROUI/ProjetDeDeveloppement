@@ -24,4 +24,3 @@
 
 ## Comment lancer le jeu ?
   
-  * Depuis la classe Jeu.java du module Jeu.
