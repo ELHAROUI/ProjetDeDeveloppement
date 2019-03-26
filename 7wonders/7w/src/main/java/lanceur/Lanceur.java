@@ -6,7 +6,7 @@ import moteur.Partie;
 
 public class Lanceur {
 
-
+	
     public static final void main(String  [] args) {
         Partie p = new Partie();
         Joueur [] joueurs = new Joueur[CONFIG.NB_JOUEURS];

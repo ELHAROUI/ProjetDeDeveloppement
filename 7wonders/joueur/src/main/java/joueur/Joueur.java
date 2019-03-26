@@ -16,9 +16,14 @@ import java.net.URISyntaxException;
 
 public class Joueur {
 
-
+	/**
+	 * pour identifier le nom du joueur
+	 */
     private String nom;
     Socket connexion ;
+    /**
+     * un objet merveille de la classe Merveille
+     */
     private Merveille merveille;
 
     public Joueur(String un_joueur) {
