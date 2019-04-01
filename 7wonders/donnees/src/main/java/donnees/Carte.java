@@ -12,6 +12,7 @@ public class Carte {
         this.name = name;
     }
 
+    // constructeur par default
     public Carte() {}
     public Carte(String name) {
         this.name = name;
