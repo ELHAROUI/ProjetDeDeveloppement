@@ -5,6 +5,7 @@ import config.MESSAGES;
 import donnees.Carte;
 import donnees.Main;
 import donnees.Merveille;
+import donnees.Piece;
 import io.socket.client.IO;
 import io.socket.client.Socket;
 import io.socket.emitter.Emitter;
@@ -20,6 +21,8 @@ public class Joueur {
     private String nom;
     Socket connexion ;
     private Merveille merveille;
+    private Piece piece;
+    
 
     public Joueur(String un_joueur) {
         setNom(un_joueur);
@@ -62,6 +65,42 @@ public class Joueur {
                     }
                 }
             });
+            
+            
+            // envoie des pieces 
+            connexion.on(MESSAGES.ENVOI_DE_PIECE, new Emitter.Listener() {
+                @Override
+                public void call(Object... objects) {
+                    // réception du JSON
+                    JSONObject PcsJSON = (JSONObject)objects[0];
+                    try {
+                        // conversion du JSON en piece
+                        int ps = PcsJSON.getInt("VAL");
+                       
+                     
+                        piece = new Piece(ps);
+
+                        // mémorisation de la piéce
+                        System.out.println(" > j'ai recu la piece"+ps);
+                        setPiece(piece);
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }); 
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
 
             // réception de la main
             connexion.on(MESSAGES.ENVOI_DE_MAIN, new Emitter.Listener() {
@@ -131,6 +170,11 @@ public class Joueur {
     public void setMerveille(Merveille merveille) {
         this.merveille = merveille;
     }
+    
+    private void setPiece(Piece piece) {
+		this.piece=piece;
+
+	}
 
     public Merveille getMerveille() {
         return merveille;
