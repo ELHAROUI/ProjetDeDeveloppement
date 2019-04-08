@@ -3,28 +3,28 @@ package donnees;
 public class Piece {
 
 
-    private int VAL;
+    private int val;
 
 	
-    public Piece(int VAL) {
-    	this.setVal(VAL);
+    public Piece(int val) {
+    	this.setVal(val);
     	
 	}
 
 
 	public int getVal() {
-		return VAL;
+		return val;
 	}
 
 
-	public void setVal(int VAL) {
-		Val = VAL;
+	public void setVal(int val) {
+		this.val = val;
 	}
 
 
 	@Override
 	public String toString() {
-		return "Piece [Val=" + VAL + "]";
+		return "Piece [Val=" + val + "]";
 	}
  
 }

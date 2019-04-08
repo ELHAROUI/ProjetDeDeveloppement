@@ -3,6 +3,7 @@ package moteur;
 import com.corundumstudio.socketio.SocketIOClient;
 import donnees.Main;
 import donnees.Merveille;
+import donnees.Piece;
 
 
 public class Participant {
@@ -11,6 +12,7 @@ public class Participant {
     private String nom;
     private Merveille merveille;
     private Main main;
+    private Piece piece;
 
 
     public Participant(SocketIOClient socketIOClient) {
