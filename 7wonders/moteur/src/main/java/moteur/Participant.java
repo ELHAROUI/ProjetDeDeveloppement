@@ -5,7 +5,7 @@ import donnees.Main;
 import donnees.Merveille;
 import donnees.Piece;
 
-
+// classe participant
 public class Participant {
 
     private SocketIOClient socket;
