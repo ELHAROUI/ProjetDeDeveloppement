@@ -18,11 +18,12 @@ public class Piece {
 
 
 	public void setVal(int val) {
-		val = val;
+
+		this.val = val;
 	}
 
 
-	@Override
+	@Override 
 	public String toString() {
 		return "Piece [Val=" + val + "]";
 	}

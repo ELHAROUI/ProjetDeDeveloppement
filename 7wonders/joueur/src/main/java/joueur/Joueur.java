@@ -75,10 +75,8 @@ public class Joueur {
                     JSONObject PcsJSON = (JSONObject)objects[0];
                     try {
                         // conversion du JSON en piece
-                        int ps = PcsJSON.getInt("VAL");
-                       
-                     
-                        piece = new Piece(ps);
+                        int ps = PcsJSON.getInt("val");
+                        piece  = new Piece(ps);
 
                         // mémorisation de la piéce
                         System.out.println(" > j'ai recu la piece"+ps);
@@ -89,18 +87,7 @@ public class Joueur {
                 }
             }); 
             
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+
 
             // réception de la main
             connexion.on(MESSAGES.ENVOI_DE_MAIN, new Emitter.Listener() {
@@ -180,3 +167,4 @@ public class Joueur {
         return merveille;
     }
 }
+
