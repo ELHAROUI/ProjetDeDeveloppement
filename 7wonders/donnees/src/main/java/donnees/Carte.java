@@ -3,6 +3,8 @@ package donnees;
 public class Carte {
 
     private String name;
+    private TypeCarte type;
+    
 
     public String getName() {
         return name;
@@ -11,6 +13,14 @@ public class Carte {
     public void setName(String name) {
         this.name = name;
     }
+    
+    public TypeCarte getType() {
+    	return type;
+    }
+    
+    //public String getEffet() {
+    	//return effet;
+    //}
 
     // constructeur par default.
     public Carte() {}

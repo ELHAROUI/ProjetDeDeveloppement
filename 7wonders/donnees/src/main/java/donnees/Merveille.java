@@ -21,6 +21,7 @@ public class Merveille {
     }
 
     public Merveille() { setRessource("-vide-");}
+    
     public Merveille(String n) { this(); setNom(n);}
 
 

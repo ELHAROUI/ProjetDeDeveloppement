@@ -57,4 +57,15 @@ public class Participant {
     public Main getMain() {
         return main;
     }
+    
+    public Piece getPiece() {
+    	return piece;
+    	
+    }
+    
+    public void setPiece (Piece p) {
+    	
+    	piece=p;
+    }
+    
 }
