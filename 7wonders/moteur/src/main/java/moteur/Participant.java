@@ -3,14 +3,16 @@ package moteur;
 import com.corundumstudio.socketio.SocketIOClient;
 import donnees.Main;
 import donnees.Merveille;
+import donnees.Piece;
 
-
+// classe participant
 public class Participant {
 
     private SocketIOClient socket;
     private String nom;
     private Merveille merveille;
     private Main main;
+    private Piece piece;
 
 
     public Participant(SocketIOClient socketIOClient) {
@@ -55,4 +57,15 @@ public class Participant {
     public Main getMain() {
         return main;
     }
+    
+    public Piece getPiece() {
+    	return piece;
+    	
+    }
+    
+    public void setPiece (Piece p) {
+    	
+    	piece=p;
+    }
+    
 }
