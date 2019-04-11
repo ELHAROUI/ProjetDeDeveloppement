@@ -3,7 +3,7 @@ package donnees;
 public class Piece {
 
 
-    private int VAL;
+    private int val;
 
 	
     public Piece(int VAL) {
@@ -13,18 +13,18 @@ public class Piece {
 
 
 	public int getVal() {
-		return VAL;
+		return val;
 	}
 
 
 	public void setVal(int VAL) {
-		Val = VAL;
+		val = VAL;
 	}
 
 
 	@Override
 	public String toString() {
-		return "Piece [Val=" + VAL + "]";
+		return "Piece [Val=" + val + "]";
 	}
  
 }
