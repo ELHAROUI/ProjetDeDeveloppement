@@ -16,15 +16,9 @@ public class Piece {
 		return val;
 	}
 
-
-<<<<<<< HEAD
-	public void setVal(int VAL) {
-		val = VAL;
-=======
 	public void setVal(int val) {
 
 		this.val = val;
->>>>>>> branch 'master' of https://github.com/ELHAROUI/ProjetDeDeveloppement.git
 	}
 
 
