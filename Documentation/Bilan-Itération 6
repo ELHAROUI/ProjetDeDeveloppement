@@ -1,6 +1,6 @@
 Bilan de l'Itération 6 : 
 
-Ajout des enumérations Ressource et TypeCarte dnas le package données.
+Ajout des enumérations Ressource et TypeCarte dans le package données.
 L'implémentation des cartes n'est par contre pas optimale . 
 
 Nous devons encore faire un héritage sur la classe Carte afin de représenter spécifiquement l'effet de chaque carte
