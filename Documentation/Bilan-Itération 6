@@ -1,12 +1,12 @@
 Bilan de l'Itération 6 : 
 
-Ajout des enumérations Ressource et TypeCarte dans le package données.
-L'implémentation des cartes n'est par contre pas optimale . 
+  * Ajout des enumérations Ressource et TypeCarte dans le package données.
+  
+  * L'implémentation des cartes n'est par contre pas optimale . 
 
-Nous devons encore faire un héritage sur la classe Carte afin de représenter spécifiquement l'effet de chaque carte
-en plus de on type :
-Gain de points de victoire , de boucliers , .. 
+  * Nous devons encore faire un héritage sur la classe Carte afin de représenter spécifiquement l'effet de chaque carte en plus de 
+  son type : Gain de points de victoire , de boucliers , .. 
 
-choix des noms des joueurs par le client au début à la console.
+  * Choix des noms des joueurs par le client au début à la console.
 
-bonne distribution des pièces au différents joureurs.
+  * Bonne distribution des pièces au différents joureurs.
