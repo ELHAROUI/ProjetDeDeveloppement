@@ -16,7 +16,7 @@ public class Lanceur {
 		Joueur [] joueurs = new Joueur[CONFIG.NB_JOUEURS];
 		
 		System.out.println("\t\t\t=================================================================");
-		System.out.println("\t\t\t!!!~~~~~~~!!! Bienvenue dans le Jeu de 7wonders !!!~~~~~~~!!!");
+		System.out.println("\t\t\t!!!~~~~~~~~!!! Bienvenue dans le Jeu de 7wonders !!!~~~~~~~~!!!");
 		System.out.println("\t\t\t=================================================================");
 		System.out.println();
 		
