@@ -15,7 +15,10 @@ public class Lanceur {
 		Partie p = new Partie();
 		Joueur [] joueurs = new Joueur[CONFIG.NB_JOUEURS];
 		
-		System.out.println("~~~~~ Bienvenue dans le Jeu de 7wonders ~~~~~");
+		System.out.println("\t\t\t=================================================================");
+		System.out.println("\t\t\t!!!~~~~~~~!!! Bienvenue dans le Jeu de 7wonders !!!~~~~~~~!!!");
+		System.out.println("\t\t\t=================================================================");
+		System.out.println();
 		
 		// Création des 3 joueurs
 		BufferedReader brNom = new BufferedReader(new InputStreamReader(System.in));

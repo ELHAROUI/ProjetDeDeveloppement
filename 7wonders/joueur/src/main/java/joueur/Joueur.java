@@ -56,9 +56,12 @@ public class Joueur {
 						String ressource = merveilleJSON.getString("ressource");
 						Merveille m = new Merveille(n);
 						m.setRessource(ressource);
-
-						// mémorisation de la merveille
+						
+						// mémorisation de la merveille					
+						System.out.println("");
+						System.out.println("-------------------"+ nom +" reçoit sa merveille-------------------");
 						System.out.println(nom+" > j'ai recu "+m);
+						System.out.println("");
 						setMerveille(m);
 					} catch (JSONException e) {
 						e.printStackTrace();
@@ -118,8 +121,10 @@ public class Joueur {
 							m.ajouterPiece(p);
 						}
 						
-						
+						System.out.println("");
+						System.out.println("-------------------"+ nom +" reçoit ses cartes et pieces -------------------");
 						System.out.println(nom+" > j'ai recu "+m);
+						System.out.println("");
 
 						// le joueur a reçu, il joue
 						jouer(m);
@@ -185,7 +190,10 @@ public class Joueur {
 		// pieceJointe.put("name", m.getCartes().get(0).getName());
 		// et il faudrait faire cela entre try / catch
 
+		System.out.println("");
+		System.out.println("-------------------"+ nom +" joue une carte -------------------");
 		System.out.println(nom + " > je joue "+m.getCartes().get(0));
+		System.out.println("");
 		connexion.emit(MESSAGES.JE_JOUE, pieceJointe);
 	}
 
