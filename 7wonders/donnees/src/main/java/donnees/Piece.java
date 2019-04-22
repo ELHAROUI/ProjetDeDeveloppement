@@ -16,6 +16,7 @@ public class Piece {
 		return val;
 	}
 
+
 	public void setVal(int val) {
 
 		this.val = val;
