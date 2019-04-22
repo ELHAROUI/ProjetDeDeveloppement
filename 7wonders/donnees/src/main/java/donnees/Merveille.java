@@ -26,6 +26,6 @@ public class Merveille {
 
 
     public String toString() {
-        return "Merveille "+getNom();
+        return "la "+getNom();
     }
 }
