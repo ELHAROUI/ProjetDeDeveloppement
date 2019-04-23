@@ -3,9 +3,11 @@ package test;
 import org.junit.Test;
 
 import donnees.Piece;
+import donnees.*;
 import junit.framework.Assert;
 
 
+@SuppressWarnings("deprecation")
 public class UnitTest {
 	
 	
@@ -17,5 +19,10 @@ public class UnitTest {
 	Assert.assertEquals(5, result);
 		
 	}
+	
+	
+	
+
+	
 
 }
