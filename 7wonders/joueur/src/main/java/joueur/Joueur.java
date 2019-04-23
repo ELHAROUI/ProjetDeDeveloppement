@@ -106,7 +106,6 @@ public class Joueur {
 
 						// le joueur a reçu, il joue
 						jouer(m);
-						jouer(m);
 
 					} catch (JSONException e) {
 						e.printStackTrace();
