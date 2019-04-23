@@ -63,7 +63,8 @@ public class Main {
         if (texte.length() > 4) texte = texte.substring(0, texte.length()-3);
 
         texte += "]";
-        for (Piece p : pieces) texte += " /// "+ p +" /// ";
+        texte += "\n\t\t";
+        for (Piece p : pieces) texte += " "+ p +" ; ";
         
         
         return texte;

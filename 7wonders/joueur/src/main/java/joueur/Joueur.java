@@ -57,8 +57,11 @@ public class Joueur {
 						Merveille m = new Merveille(n);
 						m.setRessource(ressource);
 
-						// mémorisation de la merveille
+						// mémorisation de la merveille					
+						System.out.println("");
+						System.out.println("-------------------"+ nom +" reçoit sa merveille-------------------");
 						System.out.println(nom+" > j'ai recu "+m);
+						System.out.println("");
 						setMerveille(m);
 					} catch (JSONException e) {
 						e.printStackTrace();
@@ -67,28 +70,6 @@ public class Joueur {
 			});
 
 
-			// envoie des pieces 
-			/*
-			connexion.on(MESSAGES.ENVOI_DE_PIECE, new Emitter.Listener() {
-				@Override
-				public void call(Object... objects) {
-					// réception du JSON
-					JSONObject PcsJSON = (JSONObject)objects[0];
-					try {
-						// conversion du JSON en piece
-						int ps = PcsJSON.getInt("val");
-						piece  = new Piece(ps);
-
-						// mémorisation de la piéce
-						System.out.println(" > j'ai recu la piece"+ps);
-						setPiece(piece);
-					} catch (JSONException e) {
-						e.printStackTrace();
-					}
-				}
-			}
-					); 
-					*/
 
 
 
@@ -108,20 +89,23 @@ public class Joueur {
 							Carte c = new Carte(carteJSON.getString("name"));
 							m.ajouterCarte(c);
 						}
-					// on creer et distribue les cartes
+						// on creer et distribue les cartes
 						//on utilise une boucle pour creer 3 piéces et les donner aux joueurs
-						
+
 						for(int j = 0 ; j < 3; j++) {
-							
+
 							Piece p = new Piece(1);
-							
+
 							m.ajouterPiece(p);
 						}
-						
-						
+
+						System.out.println("");
+						System.out.println("-------------------"+ nom +" reçoit ses cartes et pieces -------------------");
 						System.out.println(nom+" > j'ai recu "+m);
+						System.out.println("");
 
 						// le joueur a reçu, il joue
+						jouer(m);
 						jouer(m);
 
 					} catch (JSONException e) {
@@ -129,43 +113,11 @@ public class Joueur {
 					}
 				}
 			});
-			
-			
-			/////
-			
-			
-		/*	// réception de piéces (en se basant sur le code des mains (cartes)  )
-			connexion.on(MESSAGES.ENVOI_DE_PIECE, new Emitter.Listener() {
-				@Override
-				public void call(Object... objects) {
-					// réception de l'objet JSON : une piéce
-					JSONObject mainJSON = (JSONObject)objects[0];
-					try {
-						Main m2 = new Main();
-						// la main ne contient qu'une liste de piéces, c'est un JSONArray
-						JSONArray piecesJSON = mainJSON.getJSONArray("pieces");
-						// on recrée chaque pieces
-						for(int j = 0 ; j < 3; j++) {
-							JSONObject pieceJSON = (JSONObject) piecesJSON.get(j);
-							Piece p = new Piece(pieceJSON.getInt("val"));
-							m2.ajouterPiece(p);
-						}
-						System.out.println(nom+" > j'ai recu "+m2);
 
-						// le joueur a reçu, il joue
-						jouer(m2);
 
-					} catch (JSONException e) {
-						e.printStackTrace();
-					}
-				}
-			});
-			*/
-			
-			
-			////////
-			
-			
+
+
+
 		}
 
 
@@ -180,12 +132,12 @@ public class Joueur {
 		// ne fonctionne pas dans Android
 		JSONObject pieceJointe = new JSONObject(m.getCartes().get(0)) ;
 
-		// dans Android, il faudrait faire :
-		// JSONObject pieceJointe = new JSONObject();
-		// pieceJointe.put("name", m.getCartes().get(0).getName());
-		// et il faudrait faire cela entre try / catch
+		
 
+		System.out.println("");
+		System.out.println("-------------------"+ nom +" joue une carte -------------------");
 		System.out.println(nom + " > je joue "+m.getCartes().get(0));
+		System.out.println("");
 		connexion.emit(MESSAGES.JE_JOUE, pieceJointe);
 	}
 
@@ -212,10 +164,7 @@ public class Joueur {
 		this.merveille = merveille;
 	}
 
-	/*private void setPiece(Piece piece) {
-		this.piece=piece;
 
-	}*/
 
 	public Merveille getMerveille() {
 		return merveille;
