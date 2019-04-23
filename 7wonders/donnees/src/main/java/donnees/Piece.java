@@ -17,9 +17,11 @@ public class Piece {
 	}
 
 
+
 	public void setVal(int val) {
 
 		this.val = val;
+
 	}
 
 
