@@ -2,12 +2,13 @@ package test;
 
 import org.junit.Test;
 
-import donnees.Piece;
+
 import donnees.*;
+
 import junit.framework.Assert;
 
 
-@SuppressWarnings("deprecation")
+
 public class UnitTest {
 	
 	
@@ -20,6 +21,17 @@ public class UnitTest {
 		
 	}
 	
+	
+	@SuppressWarnings("deprecation")
+	@Test
+	public void testMain() {
+		Main m = new Main();
+		Piece p = new Piece(1);
+         m.ajouterPiece(p);
+         
+         Assert.assertEquals("1", m.getPieces().get(0));
+	
+	}
 	
 	
 
