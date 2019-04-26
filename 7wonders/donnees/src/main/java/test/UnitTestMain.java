@@ -43,20 +43,12 @@ public class UnitTestMain {
          */
         assertEquals(3, this.main.getCartes().size());
 
-        /**
-         * test le remplissage de la main par les cartes
-         */
-        assertNotNull(this.main.getCartes());
         
         /**
          * test de la taille du main de pieces
          */
         assertEquals(3, this.main.getPieces().size());
-        
-        /**
-         * test le remplissage de la main par les pieces
-         */
-        assertNotNull(this.main.getPieces());
+
 
     }
 
