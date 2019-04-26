@@ -10,7 +10,7 @@ public class UnitTestMerveille {
 	// Ceci est un test de la classe Merveille pour voir si l'element retourne la vraie valeur de la merveille réelle
 
 		@Test
-		public void testMerv () {
+		public void testMerveille () {
 			
 		 Merveille mer = new Merveille("Batiment");
 		 
