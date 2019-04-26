@@ -15,6 +15,7 @@ public class UnitTest {
 	// Ceci est un test de la classe piéce pour voir si l'element retourne la vraie valeur
 	@Test 
 	public void testpcs() {
+		
 		Piece p = new Piece(5);
 	int result=	p.getVal();
 	Assert.assertEquals(5, result);
@@ -22,6 +23,8 @@ public class UnitTest {
 	}
 	
 	// Ceci est un test de la classe Main pour voir si l'element retourne la vraie valeur des piéces dans une main 
+	
+	
 	@Test
 	public void testMain() {
 		Main m = new Main();
@@ -32,8 +35,8 @@ public class UnitTest {
 	
 	}
 	
-	// Ceci est un test de la classe Merveille pour voir si l'element retourne la vraie valeur de la merveille
-	
+	// Ceci est un test de la classe Merveille pour voir si l'element retourne la vraie valeur de la merveille réelle
+
 	@Test
 	public void testMerv () {
 		
