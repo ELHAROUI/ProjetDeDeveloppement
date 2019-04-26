@@ -9,7 +9,7 @@ import donnees.*;
 import junit.framework.Assert;
 
 
-public class UnitTestMain {
+public class MainUnitTest {
 
 	Main main;
 	private ArrayList<Carte> cartes ;
