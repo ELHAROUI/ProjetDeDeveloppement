@@ -27,7 +27,7 @@ public class Piece {
 
 	@Override 
 	public String toString() {
-		return val;
+		return "[Val="+val+"]";
 	}
  
 }

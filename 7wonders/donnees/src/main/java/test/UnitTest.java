@@ -9,10 +9,10 @@ import junit.framework.Assert;
 
 
 
+@SuppressWarnings("deprecation")
 public class UnitTest {
 	
-	
-	@SuppressWarnings("deprecation")
+	// Ceci est un test de la classe piéce pour voir si l'element retourne la vraie valeur
 	@Test 
 	public void testpcs() {
 		Piece p = new Piece(5);
@@ -21,8 +21,7 @@ public class UnitTest {
 		
 	}
 	
-	
-	@SuppressWarnings("deprecation")
+	// Ceci est un test de la classe Main pour voir si l'element retourne la vraie valeur des piéces dans une main 
 	@Test
 	public void testMain() {
 		Main m = new Main();
@@ -31,6 +30,20 @@ public class UnitTest {
          
          Assert.assertEquals("1", m.getPieces().get(0));
 	
+	}
+	
+	// Ceci est un test de la classe Merveille pour voir si l'element retourne la vraie valeur de la merveille
+	
+	@Test
+	public void testMerv () {
+		
+	 Merveille mer = new Merveille("Batiment");
+	 
+	 String res1= mer.getNom();
+	 
+	 Assert.assertSame("Batiment", res1);
+	 
+		
 	}
 	
 	
