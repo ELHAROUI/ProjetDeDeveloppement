@@ -22,7 +22,7 @@ public class UnitTest {
 		
 	}
 	
-	// Ceci est un test de la classe Main pour voir si l'element retourne la vraie valeur des piéces dans une main 
+	// Ceci est   un test de la classe Main pour voir si l'element retourne la vraie valeur des piéces dans une main 
 	
 	
 	@Test
