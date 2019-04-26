@@ -6,7 +6,6 @@ import java.util.ArrayList;
 
 import org.junit.Test;
 import donnees.*;
-import junit.framework.Assert;
 
 
 public class MainUnitTest {
