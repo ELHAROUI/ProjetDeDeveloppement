@@ -43,6 +43,12 @@ public class Carte {
 	}
 
 	/**
+	 * Constructeur par default
+	 */
+	public Carte()
+	{}
+	
+	/**
 	 * Permet de creer une carte
 	 * @param name nom de la carte
 	 */
