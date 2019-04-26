@@ -2,6 +2,7 @@ package test;
 
 import org.junit.Test;
 import junit.framework.Assert;
+import donnees.Piece;
 
 /**
  * Classe pour test de la classe piece
