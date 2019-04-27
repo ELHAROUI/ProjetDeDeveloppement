@@ -1,3 +1,4 @@
+
 package test;
 
 import org.junit.Test;
@@ -10,7 +11,7 @@ import junit.framework.Assert;
 
 
 @SuppressWarnings("deprecation")
-public class UnitTest {
+public class UnitTestPieces {
 	
 	// Ceci est un test de la classe piéce pour voir si l'element retourne la vraie valeur
 	@Test 
@@ -42,3 +43,4 @@ public class UnitTest {
 	
 
 }
+
