@@ -21,7 +21,7 @@ public class Partie {
 
     public Partie() {
 
-        // création du serveur (peut-être externalisée)
+        // création du serveur 
         Configuration config = new Configuration();
         config.setHostname(CONFIG.IP);
         config.setPort(CONFIG.PORT);
