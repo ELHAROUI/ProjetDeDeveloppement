@@ -1,6 +1,9 @@
 package moteur;
 
 import com.corundumstudio.socketio.SocketIOClient;
+import java.util.*;
+
+import donnees.Carte;
 import donnees.Main;
 import donnees.Merveille;
 import donnees.Piece;
@@ -13,6 +16,7 @@ public class Participant {
     private Merveille merveille;
     private Main main;
     private Piece piece;
+    private List<Carte> lesCartes = new ArrayList<Carte>();
 
 
     public Participant(SocketIOClient socketIOClient) {
@@ -27,7 +31,7 @@ public class Participant {
         return socket;
     }
 
-
+    
 
     public String toString() {
         return "[Joueur "+getNom()+" : "+getSocket().getRemoteAddress()+"]";
@@ -42,6 +46,11 @@ public class Participant {
         return nom;
     }
 
+    public List <Carte> getLesCartes() {
+    	
+    	return lesCartes;
+    };
+    
     public void setMerveille(Merveille merveille) {
         this.merveille = merveille;
     }
