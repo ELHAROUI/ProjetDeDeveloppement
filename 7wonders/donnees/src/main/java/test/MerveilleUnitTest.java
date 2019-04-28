@@ -4,6 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 import donnees.*;
+import junit.framework.Assert;
 
 public class MerveilleUnitTest {
 	
@@ -33,5 +34,20 @@ public class MerveilleUnitTest {
         assertEquals("ressource2",merveilleTest2.getRessource());
 
     }
+
+    /**
+     * Ceci est un test de la classe Merveille pour voir si l'element retourne la vraie valeur de la merveille réelle
+     */
+	@Test
+	public void testMerveille () {
+		
+	 Merveille mer = new Merveille("Batiment");
+	 
+	 String res1= mer.getNom();
+	 
+	 Assert.assertSame("Batiment", res1);
+	 
+		
+	}
 
 }
