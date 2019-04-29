@@ -1,3 +1,10 @@
 Bilan de l'Itération 7 : 
 
   * Ajout du Javadoc.
+
+ Implémentation des test unitaires manquants : 
+   Classes de test : UnitTest.java
+                     MerveilleUnitTest.java
+                     CarteUnitTest.java
+                     unitTestPieces.java
+                     unitTestMerveille.java
