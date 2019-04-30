@@ -1,5 +1,10 @@
 package donnees;
 
+/**
+ * 
+ * Enumeration des types de cartes
+ *
+ */
 public enum TypeCarte {
 	
 	MATIERES_PREMIERES,
