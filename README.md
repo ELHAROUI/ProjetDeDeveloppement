@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # ProjetDeDeveloppement
 
 ## Créateur
@@ -53,4 +52,3 @@
 ## Comment lancer le jeu ?
   
   * Lancez la classe Lanceur dans le package Lanceur
->>>>>>> branch 'master' of https://github.com/ELHAROUI/ProjetDeDeveloppement.git
